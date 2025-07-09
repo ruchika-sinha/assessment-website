@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes Assessment</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <meta name="google-site-verification" content="AN002tx6j0ZdrfOJ6yKA9PnvFV8a5_aLOiQfVi_rfG4" />
+</head>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; align-items: center; width: 100%; margin: 24px 0;">
+            <div style="flex: 1; height: 1px; background: #ccc;"></div>
+            <h1 class="main-heading" style="margin: 0 16px; white-space: nowrap;">Bundle & Save</h1>
+            <div style="flex: 1; height: 1px; background: #ccc;"></div>
+        </div>
+
+        <div class="offer-container">
+            <!-- First Offer Box -->
+            <div class="offer-box" id="box1">
+                <div class="offer-header" onclick="toggleBox('box1')" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="pairSelect" id="pair1-radio" class="pair-radio" style="margin-right: 10px;" checked>
+                        <div class="offer-info" style="display: flex; flex-direction: column;">
+                            <span class="offer-quantity" style="font-weight: normal;">1 Pair</span>
+                            <span class="offer-price" style="font-weight: bold;">DKK 195.00</span>
+                        </div>
+                    </div>
+                    <div class="offer-discount">
+                        <span>50% OFF</span>
+                    </div>
+                </div>
+                <div class="offer-content">
+                    <div class="options-container" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; flex-direction: row; gap: 16px; margin-left: 48px;">
+                            <label style="font-size: 12px; color: #888; width: 70px; text-align: left;">Size</label>
+                            <label style="font-size: 12px; color: #888; width: 90px; text-align: left;">Colour</label>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
+                            <span style="margin-right: 4px; color: #222;">#1</span>
+                            <select id="size1-row1" name="size1-row1" style="width: 70px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color1-row1" name="color1-row1" style="width: 90px;">
+                                <option value="colour">colour</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
+                            <span style="margin-right: 4px; color: #222;">#2</span>
+                            <select id="size1-row2" name="size1-row2" style="width: 70px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color1-row2" name="color1-row2" style="width: 90px;">
+                                <option value="colour">colour</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Offer Box -->
+            <div class="offer-box active" id="box2">
+                <div class="offer-header" onclick="toggleBox('box2')" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="pairSelect" id="pair2-radio" class="pair-radio" style="margin-right: 10px;">
+                        <div class="offer-info" style="display: flex; flex-direction: column;">
+                            <span class="offer-quantity" style="font-weight: normal;">2 Pair</span>
+                            <span>
+                                <span class="offer-price" style="font-weight: bold;">DKK 345.00</span>
+                                <span style="text-decoration: line-through; color: #aaa; font-size: 14px; margin-left: 8px;">DKK 195.00</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                        <span class="most-popular" style="color: #ff6b6b; font-weight: bold; font-size: 15px;">Most Popular</span>
+                        <span class="offer-discount" style="font-weight: bold;">40% OFF</span>
+                    </div>
+                </div>
+                <div class="offer-content">
+                    <div class="options-container" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; flex-direction: row; gap: 16px; margin-left: 48px;">
+                            <label style="font-size: 12px; color: #888; width: 70px; text-align: left;">Size</label>
+                            <label style="font-size: 12px; color: #888; width: 90px; text-align: left;">Colour</label>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
+                            <span style="margin-right: 4px; color: #222;">#1</span>
+                            <select id="size2-row1" name="size2-row1" style="width: 70px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color2-row1" name="color2-row1" style="width: 90px;">
+                                <option value="colour">colour</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
+                            <span style="margin-right: 4px; color: #222;">#2</span>
+                            <select id="size2-row2" name="size2-row2" style="width: 70px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color2-row2" name="color2-row2" style="width: 90px;">
+                                <option value="colour">colour</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Offer Box -->
+            <div class="offer-box" id="box3">
+                <div class="offer-header" onclick="toggleBox('box3')" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="pairSelect" id="pair3-radio" class="pair-radio" style="margin-right: 10px;">
+                        <div class="offer-info" style="display: flex; flex-direction: column;">
+                            <span class="offer-quantity" style="font-weight: normal;">3 Pair</span>
+                            <span class="offer-price" style="font-weight: bold;">DKK 528.00</span>
+                        </div>
+                    </div>
+                    <div class="offer-discount">
+                        <span>60% OFF</span>
+                    </div>
+                </div>
+                <div class="offer-content">
+                    <div class="options-container" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div style="display: flex; flex-direction: row; gap: 16px; margin-left: 48px;">
+                            <label style="font-size: 12px; color: #888; width: 70px; text-align: left;">Size</label>
+                            <label style="font-size: 12px; color: #888; width: 90px; text-align: left;">Colour</label>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
+                            <span style="margin-right: 4px; color: #222;">#1</span>
+                            <select id="size3-row1" name="size3-row1" style="width: 70px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color3-row1" name="color3-row1" style="width: 90px;">
+                                <option value="colour">colour</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 16px; align-items: center;">
+                            <span style="margin-right: 4px; color: #222;">#2</span>
+                            <select id="size3-row2" name="size3-row2" style="width: 70px;">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                            <select id="color3-row2" name="color3-row2" style="width: 90px;">
+                                <option value="colour">colour</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="delivery-info">
+                <span class="delivery-text">Free 2 Day Shipping</span>
+                <span class="total-price">Total: DKK 360.00</span>
+            </div>
+            <button class="add-to-cart-btn">+ Add to Cart</button>
+            <div class="copyright">© Powered by Ruchika Sinha</div>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>

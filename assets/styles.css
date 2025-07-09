@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.header-line {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+}
+
+.main-heading {
+    text-align: center;
+    color: #ff6b6b;
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.offer-container {
+    margin: 25px 0;
+}
+
+.offer-box {
+    width: 100%;
+    height: 160px; 
+    border: 2px solid #ff6b6b; 
+    border-radius: 0; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 18px; 
+    transition: border-color 0.3s, box-shadow 0.3s, padding 0.3s;
+}
+
+.offer-box.active {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 1px #ff6b6b;
+    padding: 18px 18px 20px 18px;
+}
+
+.offer-header {
+    margin-bottom: 0;
+    padding: 0;
+    min-height: 40px;
+    transition: min-height 0.3s, padding 0.3s;
+}
+
+.offer-box.active .offer-header {
+    margin-bottom: 8px;
+    min-height: 48px;
+}
+
+.offer-info {
+    gap: 2px;
+}
+
+.offer-quantity {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.offer-price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.most-popular {
+    font-size: 14px;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin: 5px 0;
+    margin-left: 12px;
+}
+
+.offer-discount {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.offer-discount span {
+    color: #131111;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.offer-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s, padding 0.3s;
+}
+
+.offer-box.active .offer-content {
+    max-height: 500px; 
+    padding-top: 8px;
+    opacity: 1;
+    overflow: visible;
+}
+
+.options-container {
+    margin-top: 0;
+    gap: 6px;
+}
+
+.options-container select {
+    margin-right: 4px;
+}
+
+.options-container label {
+    margin-bottom: 2px;
+}
+
+.size-section, .color-section {
+    flex: 1;
+}
+
+h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.option input {
+    margin-right: 8px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.delivery-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.delivery-text {
+    color: #ff6b6b;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff5252;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
